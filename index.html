@@ -1,13 +1,204 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+<html lang="es-AR">
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto integrador Cv</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <!-- Reseteando los estilos del navegador
+Para que tu sitio web se vea igual en todos los navegadores con un simple fichero css. -->
+    <link rel="stylesheet" href="estilo/normalize.css">
+    <link rel="stylesheet" href="estilo/estilo.css">
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <header class="hero">
+      <nav class="nav container">
+        <div class="nav__logo">
+          <h2 class="nav__title">Hola, Bienvenido</h2>
+        </div>
+        <ul class="nav__link nav__link--menu">
+            <li class="nav__items">
+                
+                <a href="#" class="nav__links">Inicio</a>
+            </li>
+            <li class="nav__items">
+              <a href="#section2" class="nav__links">Estudios</a>
+            </li>
+            <li class="nav__items">
+              <a href="#section1" class="nav__links">Experiencia</a>
+            </li>
+            <li class="nav__items">
+              <a href="#section4" class="nav__links">Contacto</a>
+            </li>
+            <img src="img/close.svg" alt="Imagen cerrar" class="nav__close">
+        </ul>
+            <div class="nav__menu">
+                <img src="img/menu.svg" alt="Imagen menu" class="nav__img">
+            </div>
+        </nav>
+      <section class="hero__container container">
+        <div class="hero__picture">
+          <div class="hero__img">
+            <img src="img/face3.jpg" alt="Imagen hombre" class="hero__img">
+          </div>
+      
+        </div>
+      
+        <h1 class="hero__title">Yo soy Christian.</h1>
+        <p class="hero__paragrph">Estudiante frontend web</p>
+        <a href="#section4" class="cta">Contactame</a>
+      </section>
+      </header>
+      <main>
+        <section class="knowledge" id="section1">
+          <div class="knouwledge__container container">
+            <div class="knowledege__texts">
+              <h2 class="subtitle">Conocimentos y habilidades. </h2>
+              <p class="knowledge__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ipsam ab ipsum
+                magni odio eos omnis sequi commodi deserunt! Nemo saepe modi perferendis alias sint sapiente repellendus nihil
+                consequatur odit!</p>
+              <a href="#section4" class="cta">Contactame</a>
+            </div>
+            <!-- Contenedor de la imagen dentro del contenedor Knowledge -->
+            <figure class="knowledge__picture">
+              <img src="img/dog.gif" alt="Imagen hombre" class="knowledge__img">
+            </figure>
+          </div>
+        </section>
+        <section class="questions container" id="section2">
+          <h2 class="subtitle">Formación Académica</h2>
+          <p class="questions__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum ducimus sit velit
+            eius dolores!</p>
+          <section class="questions__container">
+      
+            <artticle class="questions__padding">
+              <div class="questions__answer">
+                <h3 class="questions__title">Estudios Primarios
+                  <span class="questions__arrow">
+                    <img src="img/chevron-up-circle.svg" alt="imagen flecha" class="questions__img">
+                  </span>
+                </h3>
+                <p class="questions__show">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos vel quaerat
+                  laborum accusamus ab similique fugit saepe. Quidem quo a, totam ratione delectus itaque repellat et optio
+                  corrupti molestiae minus! Dignissimos vel quaerat laborum accusamus ab similique fugit saepe. Lorem ipsum
+                  dolor sit amet consectetur adipisicing elit. Dignissimos vel quaerat laborum accusamus ab similique fugit
+                  saepe. Quidem quo a, totam ratione delectus itaque repellat et optio corrupti molestiae minus! Dignissimos
+                  vel quaerat laborum accusamus ab similique fugit saepe. </p>
+              </div>
+            </artticle>
+      
+            <artticle class="questions__padding">
+              <div class="questions__answer">
+                <h3 class="questions__title">Estudios Secundarios
+                  <span class="questions__arrow">
+                    <img src="img/chevron-up-circle.svg" alt="imagen flecha" class="questions__img">
+                  </span>
+                </h3>
+                <p class="questions__show">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos vel quaerat
+                  laborum accusamus ab similique fugit saepe. Quidem quo a, totam ratione delectus itaque repellat et optio
+                  corrupti molestiae minus! Dignissimos vel quaerat laborum accusamus ab similique fugit saepe.</p>
+              </div>
+            </artticle>
+      
+            <artticle class="questions__padding">
+              <div class="questions__answer">
+                <h3 class="questions__title">Estudios Universitarios
+                  <span class="questions__arrow">
+                    <img src="img/chevron-up-circle.svg" alt="imagen flecha" class="questions__img">
+                  </span>
+                </h3>
+                <p class="questions__show">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos vel quaerat
+                  laborum accusamus ab similique fugit saepe. Quidem quo a, totam ratione delectus itaque repellat et optio
+                  corrupti molestiae minus! Dignissimos vel quaerat laborum accusamus ab similique fugit saepe.</p>
+              </div>
+            </artticle>
+          </section>
+        </section>
+        <section class="testimony" id="section3">
+          <div class="testimony__container container">
+            <img src="./img/arrow_back.svg" alt="imagen flecha izquierda" class="testimony__arrow" id="before">
+      
+            <section class="testimony__body testimony__body--show" data-id="1">
+              <div class="testimony__texts">
+                <h2 class="subtitle">Mi nombre es Christian Madoz, <span class="testimony__course">Front end Developer</span>
+                </h2>
+                <p class="testimony__review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia suscipit quaerat
+                  beatae assumenda amet ea ipsum excepturi, ipsam placeat, dicta qui unde? Eligendi error tempora quis ea
+                  debitis sit vel?</p>
+              </div>
+              <figure class="testimony__picture">
+                <img src="./img/face.jpg" class="testimony__img" alt="imagen estudiantes">
+              </figure>
+            </section>
+            <section class="testimony__body" data-id="2">
+              <div class="testimony__texts">
+                <h2 class="subtitle">Mi nombre es Sofia Sanchez, <span class="testimony__course">Estudiante de
+                    JavaScript.</span></h2>
+                <p class="testimony__review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia suscipit quaerat
+                  beatae assumenda amet ea ipsum excepturi.</p>
+              </div>
+              <figure class="testimony__picture">
+                <img src="./img/face2.jpg" class="testimony__img" alt="imagen estudiantes">
+              </figure>
+            </section>
+            <section class="testimony__body" data-id="3">
+              <div class="testimony__texts">
+                <h2 class="subtitle">Mi nombre es Mariano Hamz, <span class="testimony__course">Estudiante de CSS.</span></h2>
+                <p class="testimony__review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia suscipit quaerat
+                  beatae assumenda amet ea ipsum excepturi, ipsam placeat, dicta qui unde? </p>
+              </div>
+              <figure class="testimony__picture">
+                <img src="./img/face3.jpg" class="testimony__img" alt="imagen estudiantes">
+              </figure>
+            </section>
+            <img src="./img/arrow_forward.svg" alt="imagen flecha derecha" class="testimony__arrow" id="next">
+          </div>
+        </section>
+  
+</main>
+<footer class="footer" id="section4">
+  <section class="footer__container container">
+       <nav class="nav nav--footer">
+          <h2 class="footer__title">Front end Developer </h2>
+          <ul class="nav__link nav__link--footer">
+              <li class="nav__items">
+                  <a href="#" class="nav__links">Inicio</a>
+              </li>
+              <li class="nav__items">
+                  <a href="#section2" class="nav__links">Estudios</a>
+              </li>
+              <li class="nav__items">
+                  <a href="#section1" class="nav__links">Experiencia</a>
+              </li>
+              <li class="nav__items">
+                  <a href="#section4" class="nav__links">Contacto</a>
+              </li>
+          </ul>
+       </nav>
+
+       <form class="footer__form" action="https://formspree.io/f/mpzerqpw"
+       method="POST">
+          <h2 class="footer__newsletter">Suscribete a la newsletter</h2>
+          <div class="footer__inputs">
+              <input type="email" name="email" placeholder="Email:" class="footer__input">
+              <input type="submit" value="Registrate" class="footer__submit">
+          </div>
+       </form>
+  </section>
+  <section class="footer__copy container">
+      <div class="footer__social">
+          <a href="https://christianmadoz.github.io" target="_blank" rel="noopener noreferrer" class="footer__icons"><img src="./img/github.svg" alt="imagen de github" class="footer__img"></a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="footer__icons"><img src="./img/linkedin.svg" alt="imagen de linkedin" class="footer__img"></a>
+          <a href="https://watsapp.com" target="_blank" rel="noopener noreferrer"class="footer__icons"><img src="./img/whatsapp.svg" alt="imagen de whatsapp" class="footer__img"></a>
+      </div>
+
+      <h3 class="footer_copyright">Derechos Reservados &COPY; CM</h3>
+  </section>
+</footer>
+          <script src="./js/menu.js"></script>
+        <script src="./js/slider.js"></script>
+      <script src="./js/questions.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
   </body>
 </html>
