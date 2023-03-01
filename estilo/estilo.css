@@ -21,7 +21,7 @@ body{
 .hero{
     width: 100%;
     height: 100vh;
-    min-height: 600px;
+    min-height: 700px;
     max-height: 800px;
     position: relative;
     display: grid;
@@ -118,6 +118,7 @@ body{
 .hero__picture {
     display: grid;
     justify-items: center;
+    padding-top: 50px;
 }
 .hero__img {
     height: 300px;    
